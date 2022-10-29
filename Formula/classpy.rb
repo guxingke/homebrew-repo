@@ -7,14 +7,14 @@ class Classpy < Formula
 
   bottle :unneeded
 
-  depends_on "openjdk@8"
+  # depends_on "openjdk@8"
 
-  # def install
-  #   prefix.install "classpy-#{version}.jar"
+  def install
+    prefix.install "classpy-#{version}.jar"
 
-  #   (bin/"classpy").write <<~EOS
-  #     #!/usr/bin/env bash
-  #     exec java -jar #{prefix}/classpy-#{version}.jar "$@"
-  #   EOS
-  # end
+    (bin/"classpy").write <<~EOS
+      #!/usr/bin/env bash
+      exec java -jar #{prefix}/classpy-#{version}.jar "$@"
+    EOS
+  end
 end
