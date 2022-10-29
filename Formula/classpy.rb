@@ -5,7 +5,7 @@ class Classpy < Formula
   version "0.7.0"
   sha256 "7155743c22e93f9adbbae0e8fcd3de70ce852f26ac1558e819a63109b770e033"
 
-  # bottle :unneeded
+  bottle :unneeded
 
   depends_on "openjdk@8"
 
